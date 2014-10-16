@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<test>
+   <element>element contents</element>
+   <element attribute="value"/>
+   <element attribute1="value1" attribute2="value2"/>
+   <element>
+      <subelement attribute="value"/>
+      <subelement attribute1="value1" attribute2="value2">
+         <subsubelement attribute1="value1" attribute2="new_value2" attribute3="value3">With accents: ид иж ии ик ио и▓</subsubelement>
+      </subelement>
+   </element>
+</test>

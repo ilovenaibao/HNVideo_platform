@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<DevicesInfo>
+   <Device1>
+      <DeviceID>1111</DeviceID>
+      <DeviceName>佳能</DeviceName>
+      <DeviceIP>192.168.1.1</DeviceIP>
+      <MsgPort>1</MsgPort>
+      <VideoPort>2</VideoPort>
+      <AudioPort>3</AudioPort>
+      <LocalSave>否</LocalSave>
+      <SupportCloud>否</SupportCloud>
+      <ConnectStatus>未连接</ConnectStatus>
+   </Device1>
+   <Device2>
+      <DeviceID>222</DeviceID>
+      <DeviceName>222</DeviceName>
+      <DeviceIP>192.168.1.1</DeviceIP>
+      <MsgPort>1</MsgPort>
+      <VideoPort>2</VideoPort>
+      <AudioPort>3</AudioPort>
+      <LocalSave>no</LocalSave>
+      <SupportCloud>no</SupportCloud>
+      <ConnectStatus>no</ConnectStatus>
+   </Device2>
+   
+   
+   <Device3>
+      <DeviceID>333</DeviceID>
+      <DeviceName>333</DeviceName>
+      <DeviceIP>192.168.1.1</DeviceIP>
+      <MsgPort>1</MsgPort>
+      <VideoPort>2</VideoPort>
+      <AudioPort>3</AudioPort>
+      <LocalSave>no</LocalSave>
+      <SupportCloud>no</SupportCloud>
+      <ConnectStatus>no</ConnectStatus>
+   </Device3>
+   
+   
+   <Device4>
+      <DeviceID>444</DeviceID>
+      <DeviceName>444</DeviceName>
+      <DeviceIP>192.168.1.1</DeviceIP>
+      <MsgPort>1</MsgPort>
+      <VideoPort>2</VideoPort>
+      <AudioPort>3</AudioPort>
+      <LocalSave>no</LocalSave>
+      <SupportCloud>no</SupportCloud>
+      <ConnectStatus>no</ConnectStatus>
+   </Device4>
+   
+   
+   <Device5>
+      <DeviceID>555</DeviceID>
+      <DeviceName>555</DeviceName>
+      <DeviceIP>192.168.1.1</DeviceIP>
+      <MsgPort>1</MsgPort>
+      <VideoPort>2</VideoPort>
+      <AudioPort>3</AudioPort>
+      <LocalSave>no</LocalSave>
+      <SupportCloud>no</SupportCloud>
+      <ConnectStatus>no</ConnectStatus>
+   </Device5>
+
+   
+   
+   
+</DevicesInfo>

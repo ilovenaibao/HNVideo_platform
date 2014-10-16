@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="expat">
+      <UniqueIdentifier>{2dd51c49-7fb3-4366-a5ce-c582cc18482b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5c082466-1dd8-40fd-b1d7-05d94a69d946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scew1.1.6">
+      <UniqueIdentifier>{3bd9c0b3-51e6-4306-b90d-a51f5b0a1a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\test">
+      <UniqueIdentifier>{995323b1-a4bf-4aec-9f58-8acb98db2f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\leak_detector">
+      <UniqueIdentifier>{41864405-b5b8-4340-9469-b8ccb372f5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\process_xml">
+      <UniqueIdentifier>{db4da121-fb79-4511-bee4-e20458f8ebdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHNProtocol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmlparse.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmlrole.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmltok.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmltok_impl.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmltok_ns.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\attribute.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_attribute.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_compare.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_copy.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_search.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\error.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\list.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\parser.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\printer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\reader.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\reader_buffer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\reader_file.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\str.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\tree.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\writer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\writer_buffer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\writer_file.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\xattribute.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\xerror.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\xparser.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="include\test\Client.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="include\test\Server.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="include\HNCommon.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\leak_detector\leak_detector_c.cpp">
+      <Filter>include\leak_detector</Filter>
+    </ClCompile>
+    <ClCompile Include="include\process_xml\HNProtocol.cpp">
+      <Filter>include\process_xml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\process_xml\ProcessXML.cpp">
+      <Filter>include\process_xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\amigaconfig.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\ascii.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\asciitab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\expat.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\expat_external.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\iasciitab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\internal.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\latin1tab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\macconfig.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\nametab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\utf8tab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\winconfig.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\xmlrole.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\xmltok.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\xmltok_impl.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\attribute.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\bool.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\element.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\error.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\export.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\list.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\parser.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\printer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\reader.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\reader_buffer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\reader_file.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\scew.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\str.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\tree.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\writer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\writer_buffer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\writer_file.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xattribute.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xelement.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xerror.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xparser.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\Client.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\Server.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HNCommon.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leak_detector\leak_detector_c.h">
+      <Filter>include\leak_detector</Filter>
+    </ClInclude>
+    <ClInclude Include="include\process_xml\HNProtocol.h">
+      <Filter>include\process_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\process_xml\ProcessXML.h">
+      <Filter>include\process_xml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="expat\expat.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\expat_static.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\expatw.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\expatw_static.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libexpat.def">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libexpat.dll">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libexpatw.def">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libscewwd.dll">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\Makefile.MPW">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="scew1.1.6\Makefile.am">
+      <Filter>scew1.1.6</Filter>
+    </None>
+    <None Include="include\说明.txt">
+      <Filter>scew1.1.6</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="expat\libexpat.lib">
+      <Filter>expat</Filter>
+    </Library>
+    <Library Include="expat\libscewwd.lib">
+      <Filter>expat</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

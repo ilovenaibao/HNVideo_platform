@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="expat">
+      <UniqueIdentifier>{b1681b22-0542-479f-8402-7c65407e4af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scew1.1.6">
+      <UniqueIdentifier>{0ec256ff-291f-4aea-a2ee-87d77f10a343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="leak_detector">
+      <UniqueIdentifier>{2d4b5ac0-250e-4ec7-a100-040cb2cb2b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test">
+      <UniqueIdentifier>{de9edf0b-25da-4bc1-91a6-0043f3c0993e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\AccessServer.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AccessServer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="expat\expat.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\expat_static.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\expatw.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\expatw_static.dsp">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libexpat.def">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libexpat.dll">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libexpatw.def">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\libscewwd.dll">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="expat\Makefile.MPW">
+      <Filter>expat</Filter>
+    </None>
+    <None Include="scew1.1.6\Makefile.am">
+      <Filter>scew1.1.6</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccessServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessServerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\amigaconfig.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\ascii.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\asciitab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\expat.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\expat_external.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\iasciitab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\internal.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\latin1tab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\macconfig.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\nametab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\utf8tab.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\winconfig.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\xmlrole.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\xmltok.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="expat\xmltok_impl.h">
+      <Filter>expat</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\attribute.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\bool.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\element.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\error.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\export.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\list.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\parser.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\printer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\reader.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\reader_buffer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\reader_file.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\scew.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\str.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\tree.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\writer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\writer_buffer.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\writer_file.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xattribute.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xelement.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xerror.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="scew1.1.6\xparser.h">
+      <Filter>scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="leak_detector\leak_detector_c.h">
+      <Filter>leak_detector</Filter>
+    </ClInclude>
+    <ClInclude Include="HNCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Client.h">
+      <Filter>Source Files\test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Server.h">
+      <Filter>Source Files\test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccessServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessServerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmlparse.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmlrole.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmltok.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmltok_impl.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="expat\xmltok_ns.c">
+      <Filter>expat</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\attribute.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_attribute.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_compare.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_copy.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\element_search.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\error.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\list.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\parser.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\printer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\reader.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\reader_buffer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\reader_file.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\str.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\tree.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\writer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\writer_buffer.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\writer_file.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\xattribute.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\xerror.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="scew1.1.6\xparser.c">
+      <Filter>scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="leak_detector\leak_detector_c.cpp">
+      <Filter>leak_detector</Filter>
+    </ClCompile>
+    <ClCompile Include="HNCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Client.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Server.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="HNProtocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessXML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AccessServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="expat\libexpat.lib">
+      <Filter>expat</Filter>
+    </Library>
+    <Library Include="expat\libscewwd.lib">
+      <Filter>expat</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

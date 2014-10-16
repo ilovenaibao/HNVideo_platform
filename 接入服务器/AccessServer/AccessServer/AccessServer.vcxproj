@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F218D1FA-FE06-4E42-82A8-515EC9BB2CBA}</ProjectGuid>
+    <RootNamespace>AccessServer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\expat;.\scew1.1.6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="expat\expat.dsp" />
+    <None Include="expat\expatw.dsp" />
+    <None Include="expat\expatw_static.dsp" />
+    <None Include="expat\expat_static.dsp" />
+    <None Include="expat\libexpat.def" />
+    <None Include="expat\libexpat.dll" />
+    <None Include="expat\libexpatw.def" />
+    <None Include="expat\libscewwd.dll" />
+    <None Include="expat\Makefile.MPW" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\AccessServer.ico" />
+    <None Include="res\AccessServer.rc2" />
+    <None Include="scew1.1.6\Makefile.am" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccessServer.h" />
+    <ClInclude Include="AccessServerDlg.h" />
+    <ClInclude Include="expat\amigaconfig.h" />
+    <ClInclude Include="expat\ascii.h" />
+    <ClInclude Include="expat\asciitab.h" />
+    <ClInclude Include="expat\expat.h" />
+    <ClInclude Include="expat\expat_external.h" />
+    <ClInclude Include="expat\iasciitab.h" />
+    <ClInclude Include="expat\internal.h" />
+    <ClInclude Include="expat\latin1tab.h" />
+    <ClInclude Include="expat\macconfig.h" />
+    <ClInclude Include="expat\nametab.h" />
+    <ClInclude Include="expat\utf8tab.h" />
+    <ClInclude Include="expat\winconfig.h" />
+    <ClInclude Include="expat\xmlrole.h" />
+    <ClInclude Include="expat\xmltok.h" />
+    <ClInclude Include="expat\xmltok_impl.h" />
+    <ClInclude Include="HNCommon.h" />
+    <ClInclude Include="HNProtocol.h" />
+    <ClInclude Include="leak_detector\leak_detector_c.h" />
+    <ClInclude Include="ProcessXML.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="scew1.1.6\attribute.h" />
+    <ClInclude Include="scew1.1.6\bool.h" />
+    <ClInclude Include="scew1.1.6\element.h" />
+    <ClInclude Include="scew1.1.6\error.h" />
+    <ClInclude Include="scew1.1.6\export.h" />
+    <ClInclude Include="scew1.1.6\list.h" />
+    <ClInclude Include="scew1.1.6\parser.h" />
+    <ClInclude Include="scew1.1.6\printer.h" />
+    <ClInclude Include="scew1.1.6\reader.h" />
+    <ClInclude Include="scew1.1.6\reader_buffer.h" />
+    <ClInclude Include="scew1.1.6\reader_file.h" />
+    <ClInclude Include="scew1.1.6\scew.h" />
+    <ClInclude Include="scew1.1.6\str.h" />
+    <ClInclude Include="scew1.1.6\tree.h" />
+    <ClInclude Include="scew1.1.6\writer.h" />
+    <ClInclude Include="scew1.1.6\writer_buffer.h" />
+    <ClInclude Include="scew1.1.6\writer_file.h" />
+    <ClInclude Include="scew1.1.6\xattribute.h" />
+    <ClInclude Include="scew1.1.6\xelement.h" />
+    <ClInclude Include="scew1.1.6\xerror.h" />
+    <ClInclude Include="scew1.1.6\xparser.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="test\Client.h" />
+    <ClInclude Include="test\Server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccessServer.cpp" />
+    <ClCompile Include="AccessServerDlg.cpp" />
+    <ClCompile Include="expat\xmlparse.c" />
+    <ClCompile Include="expat\xmlrole.c" />
+    <ClCompile Include="expat\xmltok.c" />
+    <ClCompile Include="expat\xmltok_impl.c" />
+    <ClCompile Include="expat\xmltok_ns.c" />
+    <ClCompile Include="HNCommon.cpp" />
+    <ClCompile Include="HNProtocol.cpp" />
+    <ClCompile Include="leak_detector\leak_detector_c.cpp" />
+    <ClCompile Include="ProcessXML.cpp" />
+    <ClCompile Include="scew1.1.6\attribute.c" />
+    <ClCompile Include="scew1.1.6\element.c" />
+    <ClCompile Include="scew1.1.6\element_attribute.c" />
+    <ClCompile Include="scew1.1.6\element_compare.c" />
+    <ClCompile Include="scew1.1.6\element_copy.c" />
+    <ClCompile Include="scew1.1.6\element_search.c" />
+    <ClCompile Include="scew1.1.6\error.c" />
+    <ClCompile Include="scew1.1.6\list.c" />
+    <ClCompile Include="scew1.1.6\parser.c" />
+    <ClCompile Include="scew1.1.6\printer.c" />
+    <ClCompile Include="scew1.1.6\reader.c" />
+    <ClCompile Include="scew1.1.6\reader_buffer.c" />
+    <ClCompile Include="scew1.1.6\reader_file.c" />
+    <ClCompile Include="scew1.1.6\str.c" />
+    <ClCompile Include="scew1.1.6\tree.c" />
+    <ClCompile Include="scew1.1.6\writer.c" />
+    <ClCompile Include="scew1.1.6\writer_buffer.c" />
+    <ClCompile Include="scew1.1.6\writer_file.c" />
+    <ClCompile Include="scew1.1.6\xattribute.c" />
+    <ClCompile Include="scew1.1.6\xerror.c" />
+    <ClCompile Include="scew1.1.6\xparser.c" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test\Client.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test\Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AccessServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="expat\libexpat.lib" />
+    <Library Include="expat\libscewwd.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AccessServer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

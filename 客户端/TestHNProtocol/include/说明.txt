@@ -1,0 +1,2 @@
+scew地址:http://git.savannah.gnu.org/cgit/scew.git
+目前用的版本是1.1.6
