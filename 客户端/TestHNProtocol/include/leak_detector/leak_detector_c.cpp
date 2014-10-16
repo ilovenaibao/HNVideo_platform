@@ -35,7 +35,7 @@ void add(MEM_INFO alloc_info)
 		// find next point
 		unsigned index = 0;
 		MEM_LEAK * alloc_info = NULL;
-		for (index = 0, alloc_info = ptr_start; ; index++) {
+		for (index = 0, alloc_info = ptr_start; ; alloc_info = alloc_info->next, index++) {
 			if (NULL == alloc_info->next) {
 				ptr_next = alloc_info;
 				break;
@@ -216,4 +216,17 @@ int report_mem_leak(void)
 	clear();
 
 	return ret;
+}
+
+/*
+ * replacement of malloc
+ */
+void * xnew (unsigned int size, const char * file, unsigned int line)
+{
+	void * ptr = new (size);
+	if (ptr != NULL) 
+	{
+		add_mem_info(ptr, size, file, line);
+	}
+	return ptr;
 }

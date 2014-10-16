@@ -19,6 +19,8 @@
 #define  calloc(elements, size)  	xcalloc (elements, size, __FILE__, __LINE__)
 #define  free(mem_ref) 		  	 	xfree(mem_ref)
 
+#define  new(size)						xnew (size, __FILE__, __LINE__)
+
 
 struct _MEM_INFO
 {
@@ -46,5 +48,7 @@ void xfree(void * mem_ref);
 void add_mem_info (void * mem_ref, unsigned int size,  const char * file, unsigned int line);
 void remove_mem_info (void * mem_ref);
 int report_mem_leak(void);
+
+void * xnew (unsigned int size, const char * file, unsigned int line);
 
 #endif
