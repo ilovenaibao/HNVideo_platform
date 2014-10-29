@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="HNCommon">
+      <UniqueIdentifier>{4985a004-b800-4332-b78e-fda0659af68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNCommon\expat">
+      <UniqueIdentifier>{833bc2e7-ed8d-46af-8cf8-136ed842d976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNCommon\scew1.1.6">
+      <UniqueIdentifier>{ff836711-1d65-4de4-a02d-d6ae88ed835e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNCommon\process_xml">
+      <UniqueIdentifier>{a7db2ea1-7c0c-453c-88b5-f4e5fa5536ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\HNTestRendingMod.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\HNTestRendingMod.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\说明.txt">
+      <Filter>HNCommon</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\scew1.1.6\Makefile.am">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\expat.dsp">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\expat_static.dsp">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\expatw.dsp">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\expatw_static.dsp">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\libexpat.def">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\libexpat.dll">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\libexpatw.def">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\libscewwd.dll">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+    <None Include="..\..\..\video_platform\HNCommon\expat\Makefile.MPW">
+      <Filter>HNCommon\expat</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HNTestRendingMod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNTestRendingModDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\HNCommon.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\attribute.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\bool.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\element.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\error.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\export.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\list.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\parser.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\printer.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_buffer.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_file.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\scew.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\str.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\tree.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_buffer.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_file.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xattribute.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xelement.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xerror.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xparser.h">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\process_xml\HNProtocol.h">
+      <Filter>HNCommon\process_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\process_xml\ProcessXML.h">
+      <Filter>HNCommon\process_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\amigaconfig.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\ascii.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\asciitab.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\expat.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\expat_external.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\iasciitab.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\internal.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\latin1tab.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\macconfig.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\nametab.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\utf8tab.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\winconfig.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\xmlrole.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\xmltok.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\xmltok_impl.h">
+      <Filter>HNCommon\expat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HNTestRendingMod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HNTestRendingModDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\HNCommon.cpp">
+      <Filter>HNCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\attribute.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_attribute.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_compare.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_copy.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_search.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\error.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\list.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\parser.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\printer.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_buffer.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_file.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\str.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\tree.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_buffer.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_file.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\xattribute.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\xerror.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\xparser.c">
+      <Filter>HNCommon\scew1.1.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\process_xml\HNProtocol.cpp">
+      <Filter>HNCommon\process_xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\process_xml\ProcessXML.cpp">
+      <Filter>HNCommon\process_xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmlparse.c">
+      <Filter>HNCommon\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmlrole.c">
+      <Filter>HNCommon\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmltok.c">
+      <Filter>HNCommon\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmltok_impl.c">
+      <Filter>HNCommon\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmltok_ns.c">
+      <Filter>HNCommon\expat</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HNTestRendingMod.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\video_platform\HNCommon\expat\libexpat.lib">
+      <Filter>HNCommon\expat</Filter>
+    </Library>
+    <Library Include="..\..\..\video_platform\HNCommon\expat\libscewwd.lib">
+      <Filter>HNCommon\expat</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

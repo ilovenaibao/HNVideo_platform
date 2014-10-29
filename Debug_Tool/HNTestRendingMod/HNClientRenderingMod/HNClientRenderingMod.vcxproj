@@ -196,6 +196,9 @@
     <ClInclude Include="..\src\RenderingMod\RenderObject.h" />
     <ClInclude Include="..\src\test\Client.h" />
     <ClInclude Include="..\src\test\Server.h" />
+    <ClInclude Include="DeviceManager\DeviceInfo.h" />
+    <ClInclude Include="DeviceManager\DeviceManager.h" />
+    <ClInclude Include="DeviceManager\sal.h" />
     <ClInclude Include="HNClientRenderingMod.h" />
     <ClInclude Include="HNClientRenderingModDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -335,6 +338,8 @@
     <ClCompile Include="..\src\test\Server.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="DeviceManager\DeviceInfo.cpp" />
+    <ClCompile Include="DeviceManager\DeviceManager.cpp" />
     <ClCompile Include="HNClientRenderingMod.cpp" />
     <ClCompile Include="HNClientRenderingModDlg.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -12,6 +12,7 @@
 #include "../src/NetGobalDef.h"
 #include "../../../video_platform/HNCommon/process_xml/ProcessXML.h"
 #include "../src/test/Client.h"
+#include "./DeviceManager/DeviceManager.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -127,7 +128,19 @@ BOOL CHNClientRenderingModDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
+
+
 	// TODO: Add extra initialization here
+
+	// scan devices list
+	CDeviceManager device_manager;
+
+	device_manager.StartListening();
+	device_manager.Broadcast();
+
+	return TRUE;
+	// scan end
+
 	hDisplay = GetSafeHwnd();
 	hContainer = GetSafeHwnd();
 	renderingMod.Init(hDisplay, hContainer);

@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F9F4F280-DBC6-41EC-93A9-90BD036ECC42}</ProjectGuid>
+    <RootNamespace>HNTestRendingMod</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath);.\src\RenderingMod\DirectX\Extra\Include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../video_platform/HNCommon;../../../video_platform/HNCommon/scew1.1.6;../../../video_platform/HNCommon/expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\src\RenderingMod\DirectX\Extra\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\video_platform\HNCommon\expat\expat.dsp" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\expatw.dsp" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\expatw_static.dsp" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\expat_static.dsp" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\libexpat.def" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\libexpat.dll" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\libexpatw.def" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\libscewwd.dll" />
+    <None Include="..\..\..\video_platform\HNCommon\expat\Makefile.MPW" />
+    <None Include="..\..\..\video_platform\HNCommon\scew1.1.6\Makefile.am" />
+    <None Include="..\..\..\video_platform\HNCommon\说明.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\HNTestRendingMod.ico" />
+    <None Include="res\HNTestRendingMod.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\amigaconfig.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\ascii.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\asciitab.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\expat.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\expat_external.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\iasciitab.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\internal.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\latin1tab.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\macconfig.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\nametab.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\utf8tab.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\winconfig.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\xmlrole.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\xmltok.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\expat\xmltok_impl.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\HNCommon.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\process_xml\HNProtocol.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\process_xml\ProcessXML.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\attribute.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\bool.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\element.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\error.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\export.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\list.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\parser.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\printer.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_buffer.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_file.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\scew.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\str.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\tree.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_buffer.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_file.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xattribute.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xelement.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xerror.h" />
+    <ClInclude Include="..\..\..\video_platform\HNCommon\scew1.1.6\xparser.h" />
+    <ClInclude Include="HNTestRendingMod.h" />
+    <ClInclude Include="HNTestRendingModDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmlparse.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmlrole.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmltok.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmltok_impl.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\expat\xmltok_ns.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\HNCommon.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\process_xml\HNProtocol.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\process_xml\ProcessXML.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\attribute.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_attribute.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_compare.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_copy.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\element_search.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\error.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\list.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\parser.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\printer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_buffer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\reader_file.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\str.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\tree.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_buffer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\writer_file.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\xattribute.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\xerror.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\video_platform\HNCommon\scew1.1.6\xparser.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HNTestRendingMod.cpp" />
+    <ClCompile Include="HNTestRendingModDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HNTestRendingMod.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\video_platform\HNCommon\expat\libexpat.lib" />
+    <Library Include="..\..\..\video_platform\HNCommon\expat\libscewwd.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="HNTestRendingMod.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

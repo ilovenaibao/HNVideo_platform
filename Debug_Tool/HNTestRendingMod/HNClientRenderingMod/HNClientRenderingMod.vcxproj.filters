@@ -34,6 +34,9 @@
     <Filter Include="src\RenderingMod">
       <UniqueIdentifier>{a63b5dc7-e959-41a7-828b-c52d27f01a43}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DeviceManager">
+      <UniqueIdentifier>{435e006b-2a58-4af8-aed4-fd4b368e0c21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -291,6 +294,15 @@
     <ClInclude Include="..\src\RenderingMod\RenderObject.h">
       <Filter>src\RenderingMod</Filter>
     </ClInclude>
+    <ClInclude Include="DeviceManager\DeviceInfo.h">
+      <Filter>Source Files\DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceManager\DeviceManager.h">
+      <Filter>Source Files\DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceManager\sal.h">
+      <Filter>Source Files\DeviceManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HNClientRenderingMod.cpp">
@@ -433,6 +445,12 @@
     </ClCompile>
     <ClCompile Include="..\src\RenderingMod\RenderObject.cpp">
       <Filter>src\RenderingMod</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceManager\DeviceInfo.cpp">
+      <Filter>Source Files\DeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceManager\DeviceManager.cpp">
+      <Filter>Source Files\DeviceManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
